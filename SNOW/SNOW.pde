@@ -1,5 +1,3 @@
-Class Snow {
-
 
   int count = 500;
   PImage snowflake;
@@ -12,7 +10,7 @@ Class Snow {
   float[] spin = new float[count];
 
 
-  void display() {
+  void setup() {
 
     imageMode(CENTER);
     snowflake = loadImage("flake.png");
@@ -31,7 +29,7 @@ Class Snow {
   }
 
 
-  void move {
+  void draw() {
     for (int i = 0; i < count; i++) {
       //move snowflake
       vel[i].add(acc[i]);
@@ -54,5 +52,5 @@ Class Snow {
       }
     }
   }
-}
+
 
